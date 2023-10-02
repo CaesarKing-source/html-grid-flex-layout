@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.bg-violet {
+    background-color: rebeccapurple;
+    color: #fff;
+}
+
+.bg-grey {
+    background-color: gainsboro;
+    color: #000;
+}
+
+.bg-black {
+    background-color: black;
+    color: #fff;
+}
+
+.bg-aqua {
+    background-color: aquamarine;
+    color: #000;
+}
+
+.testimonial-grid {
+    display: grid;
+    gap: 1.5rem;
+    
+    width: min(95%, 70rem);
+    padding-block: 2rem;
+    margin-inline: auto;
+}
+
+.testimonial {
+    font-size: 16px;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 800px) {
+    .grid-col-span-2 {
+        grid-column: span 2;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .grid-5 {
+        grid-column: 4 / 5;
+        grid-row: 1 / 3;
+    }
+}
